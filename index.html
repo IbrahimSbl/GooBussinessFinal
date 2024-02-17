@@ -14,8 +14,6 @@
     <link  rel="stylesheet" href="./static/css/courseregform/style.css">
     <link rel="stylesheet" href="./static/css/courseregform/responsive.css">
 
-    <!-- JavaScript Links -->
-    <script src="./static/js/courseregform/style.js"></script>
 </head>
 <body>
     <nav class="nav">
@@ -41,42 +39,61 @@
     <section id="register" class="register">
         <div class="form-container">
             <p>Enroll Now</p>
-            <form action="/courseRegFormSubmit" method="post" id="regForm">
-                <label for="name">Your Name :</label>
-                <input type="text" id="name" name="name" autocomplete="on" required />
+            <form id="regForm" onsubmit="return validateInputs(event)">
+                <div class="form-group">
+                    <label for="name">Your Name :</label>
+                    <input type="text" id="name" name="name" autocomplete="on" onkeyup="checkName()" />
+                </div>
 
-                <label for="phone">Mobile Number :</label>
-                <input type="phone" id="phone" name="phone" autocomplete="on" required />
-                
-                <label for="email">Email Address :</label>
-                <input type="email" id="email" name="email" autocomplete="on" required />
-                
-                <label for="age">Your Age :</label>
-                <input type="number" id="age" name="age" required />
-                
-                <label for="gender">Choose Your Gende :</label>
-                <select name="gender" id="gender">
-                    <option value="" disabled selected>Select your gender</option>
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                </select>    
+                <div class="form-group">
+                    <label for="phone">Mobile Number :</label>
+                    <input type="phone" id="phone" name="phone" autocomplete="on" onkeyup="checkPhone()" />
+                </div>
 
-                <label for="course">Which course you are interested in :</label>
-                <input type="text" id="course" name="course" required />
+                <div class="form-group">
+                    <label for="email">Email Address :</label>
+                    <input type="email" id="email" name="email" autocomplete="on" onkeyup="checkEmail()" />
+                </div>                
 
-                <label for="education">Level of Education:</label>
-                <select id="education" name="education" class="education-select">
-                    <option value="high_school">High School Diploma/GED</option>
-                    <option value="associate">Associate's Degree</option>
-                    <option value="bachelor">Bachelor's Degree</option>
-                    <option value="master">Master's Degree</option>
-                    <option value="phd">Doctoral Degree</option>
-                    <option value="other">Other (please specify below)</option>
-                </select>
-                <input type="text" id="education_other" name="education_other" class="other-input" disabled>
+                <div class="form-group">
+                    <label for="age">Your Age :</label>
+                    <input type="number" id="age" name="age" onkeyup="checkAge()" />
+                </div>                
 
-                <label for="code">Enter REferral Code (Optional) :</label>
-                <input type="text" id="code" name="code" required />
+                <div class="form-group">
+                    <label for="gender">Choose Your Gender :</label>
+                    <select name="gender" id="gender" onchange="checkGender()">
+                        <option value="" disabled selected>Select your gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>   
+                </div>                
+ 
+                <div class="form-group">
+                    <label for="course">Which course you are interested in :</label>
+                    <input type="text" id="course" name="course" onkeyup="checkCourse()" />
+                </div>
+
+                <div class="form-group">
+                    <label for="education">Level of Education:</label>
+                    <select id="education" name="education" class="education-select" onchange="checkEducation()">
+                        <option value="high_school">High School Diploma/GED</option>
+                        <option value="associate">Associate's Degree</option>
+                        <option value="bachelor">Bachelor's Degree</option>
+                        <option value="master">Master's Degree</option>
+                        <option value="phd">Doctoral Degree</option>
+                        <option value="other">Other (please specify below)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" id="education_other" name="education_other" class="other-input" onkeyup="checkEducation()" disabled>
+                </div>
+
+                <div class="form-group">
+                    <label for="code">Enter REferral Code (Optional) :</label>
+                    <input type="text" id="code" name="code" />
+                </div>
 
                 <button type="submit" class="submit-button">Register</button>
             </form>
@@ -205,5 +222,9 @@
         <img src="./static/img/courseregform/logo.svg" alt="Goo Business Logo">
         <p>Barakaimari, Coochbehar, West Bengal, India</p> 
     </section>
+
+    
+    <!-- JavaScript Links -->
+    <script src="./static/js/courseregform/style.js"></script>
 </body>
 </html>
