@@ -1,6 +1,6 @@
-#Goo Business - Final Project
+# Goo Business - Final Project
 
 <ol>
-    <li>A <bold>responsive</bold> webpage</li>
-    <li>Enroll form with <bold>validation</bold></li>
+    <li>A <b>responsive</b> webpage</li>
+    <li>Enroll form with <b>validation</b></li>
 </ol>
