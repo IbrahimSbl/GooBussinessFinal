@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Registration | Goo Business</title>
+
+    <!-- Import fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <!-- Style Sheet Links -->
+    <link  rel="stylesheet" href="./static/css/courseregform/style.css">
+    <link rel="stylesheet" href="./static/css/courseregform/responsive.css">
+
+    <!-- JavaScript Links -->
+    <script src="./static/js/courseregform/style.js"></script>
+</head>
+<body>
+    <nav class="nav">
+        <div class="logo-container">
+            <img src="./static/img/courseregform/logo.svg" alt="Goo Business Logo" class="logo" />
+        </div>
+    </nav>
+    <section class="hero">
+        <div class="content">
+            <h1>
+                 Become a <span style="color:rgb(0, 110, 255);">Skilled </span>
+                 <span style="color: rgb(228, 228, 5);"> Web Developer </span>
+                 and <span style="color:brown;" >Get Hired! </span>
+            </h1>  
+            <p>
+                Learn Web development and secure a job within our growing team.
+            </p>          
+        </div>
+        <div class="hero-image-container">
+            <img class="hero-img" src="./static/img/courseregform/heroImg.png" alt="Hero Image" />
+        </div>
+    </section>
+    <section id="register" class="register">
+        <div class="form-container">
+            <p>Enroll Now</p>
+            <form action="/courseRegFormSubmit" method="post" id="regForm">
+                <label for="name">Your Name :</label>
+                <input type="text" id="name" name="name" autocomplete="on" required />
+
+                <label for="phone">Mobile Number :</label>
+                <input type="phone" id="phone" name="phone" autocomplete="on" required />
+                
+                <label for="email">Email Address :</label>
+                <input type="email" id="email" name="email" autocomplete="on" required />
+                
+                <label for="age">Your Age :</label>
+                <input type="number" id="age" name="age" required />
+                
+                <label for="gender">Choose Your Gende :</label>
+                <select name="gender" id="gender">
+                    <option value="" disabled selected>Select your gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>    
+
+                <label for="course">Which course you are interested in :</label>
+                <input type="text" id="course" name="course" required />
+
+                <label for="education">Level of Education:</label>
+                <select id="education" name="education" class="education-select">
+                    <option value="high_school">High School Diploma/GED</option>
+                    <option value="associate">Associate's Degree</option>
+                    <option value="bachelor">Bachelor's Degree</option>
+                    <option value="master">Master's Degree</option>
+                    <option value="phd">Doctoral Degree</option>
+                    <option value="other">Other (please specify below)</option>
+                </select>
+                <input type="text" id="education_other" name="education_other" class="other-input" disabled>
+
+                <label for="code">Enter REferral Code (Optional) :</label>
+                <input type="text" id="code" name="code" required />
+
+                <button type="submit" class="submit-button">Register</button>
+            </form>
+        </div>
+        <div class="features">
+            <div class="feature">
+                <img src="./static/img/courseregform/CheckedLaptop.svg" alt="Checked laptop" >
+                <div>
+                    <h3>Batch Starting</h3>
+                    <p>20 Feb 2024</p>
+                </div>
+            </div>
+            <div class="feature">
+                <img src="./static/img/courseregform/Timesheet.svg" alt="Time sheet" >
+                <div>
+                    <h3>Duration</h3>
+                    <p>6 Months</p>                    
+                </div>
+            </div>
+            <div class="feature">
+                <img src="./static/img/courseregform/MoneyBagRupee.svg" alt="Money Bag Rupee" >
+                <div>
+                    <h3>Price</h3>
+                    <p>Rs.299 / Month</p>                    
+                </div>
+            </div>
+            <div class="feature">
+                <img src="./static/img/courseregform/People.svg" alt="People Icon" >
+                <div>
+                    <h3>Eligibility</h3>
+                    <p>12th pass</p>                    
+                </div>
+            </div>
+            <div class="note">
+                NOTE : Our courses are free to enroll, but a nominal service charge applies. For just ₹299 per month, you'll gain access to our comprehensive curriculum, projects, and resources. You can CANCEL the course at anytime.
+            </div>
+        </div>
+    </section>
+
+    <div class="splitter"></div>
+
+    <!-- Employment Introduction -->
+    <section class="employment-section">
+       <div class="employment-img-container">
+            <img class="employment-img" src="./static/img/courseregform/Employment.png" alt="Employment Image"/>
+       </div> 
+       <div class="employment-content">
+            <h3>
+                <span style="color: #2194F3;text-decoration: underline;"> Employment</span><span style="color: #4D4D4D;text-decoration: underline;"> Oppurtunity</span>
+            </h3>
+            <p>
+                Successful completion of our courses opens the door to exciting career opportunities within our company. Our top performers have the chance to join our team and work on cutting-edge projects alongside seasoned professionals.
+            </p>
+            <p>
+                At Goo Business, we value talent and dedication. That's why we prioritize hiring from within our pool of course graduates. If you perform well and demonstrate your skills, you could find yourself with a rewarding career right here with us.
+            </p>
+       </div>
+    </section>
+
+    <div class="splitter"></div>
+    <!-- Agenda Section -->
+    <section class="agenda-section">
+        <div>
+            <h1>
+                <span style="color: #2194F3;text-decoration: underline;"> Our </span>
+                <span style="color: #4D4D4D;text-decoration: underline;"> Agenda</span>
+            </h1>
+            <p>
+                At Goo Business, we're on a mission to bridge the gap between demand and supply in web development. Faced with the challenge of finding skilled developers for our projects, we decided to take matters into our own hands by offering comprehensive web development courses.
+            </p>            
+        </div>
+
+    </section>
+
+    <div class="splitter"></div>
+
+    <!-- Project Section -->
+    <section class="project-section">
+        <h1>
+            <span style="color: #2194F3;text-decoration: underline;"> Real-World Project </span><span style="color: #4D4D4D;text-decoration: underline;">Experience</span>
+        </h1>
+        <div>
+            <div class="project-gain">
+                <div>
+                    <img src="./static/img/courseregform/Ok.svg" alt="tick icon"/>
+                    <p>Gain hands-on experience with industry relevant projects.</p>
+                </div>
+                <div>
+                    <img src="./static/img/courseregform/Ok.svg" alt="tick icon"/>
+                    <p>Apply your newly acquired skills to solve real-world challenges.</p>
+                </div>
+                <div>
+                    <img src="./static/img/courseregform/Ok.svg" alt="tick icon"/>
+                    <p>Receive feedback and guidance from industry experts as you work on projects.</p>
+                </div>
+                <div>
+                    <img src="./static/img/courseregform/Ok.svg" alt="tick icon"/>
+                    <p>Collaborate with peers and mentors to develop practical solutions.</p>
+                </div>
+            </div>
+            <img class="project-image" src="./static/img/courseregform/discussion.png" alt="Discussion Image"/>
+        </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section class="tools-section">
+        <h1>
+            <span style="color: #2194F3;text-decoration: underline;"> Tools </span><span style="color: #4D4D4D;text-decoration: underline;">Covered</span>
+        </h1>
+        <img src="./static/img/courseregform/tools.png" alt="Tools Image"/>
+    </section>
+
+    <!-- Join Section -->
+    <section class="join-section">
+        <p class="before-join">So, are you prepared to enter the tech industry and establish a fulfilling career by mastering the craft of web development?</p>
+        <a 
+            href="#register" 
+            class="join-button"
+            onClick='scrollToEnroll(event)'
+            >YES! I WANT TO JOIN</a>
+        <p class="after-join">So I Can Get A Well-Paying IT Job Under 6 Months</p>
+    </section>
+
+    <!-- Footer Section -->
+    <section class="footer-section">
+        <img src="./static/img/courseregform/logo.svg" alt="Goo Business Logo">
+        <p>Barakaimari, Coochbehar, West Bengal, India</p> 
+    </section>
+</body>
+</html>

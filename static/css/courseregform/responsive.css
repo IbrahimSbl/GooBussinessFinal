@@ -1,0 +1,96 @@
+
+@media (max-width: 1135px){
+    /* Project Section */
+    .project-section>div{
+        justify-content: space-between;
+    }
+    .project-section>div img {
+        width: 35vw;
+        height: 340px;
+    }
+}
+
+@media (max-width: 1045px){
+    .content{
+        width: 30vw;
+    }
+}
+
+@media (max-width: 840px){
+    /* Hero section */
+    .hero-img{
+        width: 70vw;
+    }
+    .content{
+        width: 55vw;
+    }
+    /* Register Section*/
+    .register{
+        flex-wrap: wrap;
+    }
+    .register .form-container {
+        width: 80vw;
+    }
+    .register .features{
+        margin-left: 0;
+        width: 80vw;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .register .features>div {
+        width: 40vw;
+        justify-content: center!important;
+    }
+    .feature>div{
+        width: 40%!important;
+    }
+    .note{
+        width: 70vw!important;
+    }
+    /* Employment Section */
+    .employment-content {
+        width: 80vw;
+    }
+    .employment-img {
+        width: 80vw;
+    }
+    /* Project Section */
+    .project-section>div{
+        justify-content: center;
+    }
+    .project-section div .project-gain div{
+        width: 100%;
+    }
+    .project-section>div img {
+        width: 70vw;
+        height: 50vh;
+    }
+}
+
+@media (max-width: 450px){
+    .content{
+        width: 70vw;
+    }
+
+    .register .features{
+        margin-left: 0;
+        width: 80vw;
+    }
+    .register .features>div {
+        width: 80vw;
+        justify-content: space-around;
+    }
+    .feature>div{
+        width: 100%!important;
+    }
+    .note{
+        width: 80vw!important;
+    }
+}
+
+@media (max-width:380px){
+    .footer-section p {
+        padding: 10px;
+    }
+}
